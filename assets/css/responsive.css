@@ -1,0 +1,270 @@
+/* 
+========================================================================
+   SHARDA INDUSTRIAL SECURITY & MANPOWER SERVICES (SISMS)
+   Responsive Overrides (responsive.css)
+   Author: Senior UI/UX Designer & Software Architect
+   Description: Viewport optimization for tablet, mobile, and laptop devices.
+========================================================================
+*/
+
+/* 1. LARGE LAPTOPS & SMALL DESKTOPS (Max 1200px) */
+@media (max-width: 1200px) {
+    html {
+        font-size: 15px;
+    }
+    
+    .hero-content h1 {
+        font-size: 3rem;
+    }
+    
+    .founder-img-wrapper img {
+        height: 420px;
+    }
+}
+
+/* 2. TABLET DEVICES (Max 992px) */
+@media (max-width: 992px) {
+    :root {
+        --header-height: 70px;
+    }
+    
+    /* Navigation Bar Restyling */
+    .navbar {
+        height: var(--header-height);
+    }
+    
+    .navbar-brand img {
+        height: 45px;
+    }
+    
+    .navbar-collapse {
+        background-color: var(--white);
+        border-top: 2px solid var(--accent-orange);
+        padding: 20px 30px;
+        box-shadow: var(--shadow-lg);
+        position: absolute;
+        top: var(--header-height);
+        left: 0;
+        width: 100%;
+        max-height: calc(100vh - var(--header-height));
+        overflow-y: auto;
+    }
+    
+    .nav-link {
+        line-height: 2.2 !important;
+        padding: 8px 0 !important;
+        border-bottom: 1px solid var(--border-color);
+    }
+    
+    .nav-link::after {
+        display: none; /* Disable underline effect on mobile/tablet drawer */
+    }
+    
+    .nav-link:hover,
+    .nav-link.active {
+        padding-left: 10px !important;
+    }
+    
+    /* Hero Banner Adjustment */
+    .hero-banner {
+        min-height: 550px;
+        padding: 80px 0;
+        text-align: center;
+    }
+    
+    .hero-content {
+        margin: 0 auto;
+    }
+    
+    .hero-content h1 {
+        font-size: 2.6rem;
+    }
+    
+    .hero-buttons {
+        justify-content: center;
+    }
+    
+    /* Trust Bar Grid */
+    .trust-bar {
+        padding: 30px 0;
+    }
+    
+    .trust-item {
+        margin-bottom: 20px;
+        justify-content: center;
+    }
+    
+    .trust-item:last-child {
+        margin-bottom: 0;
+    }
+    
+    /* Grid Adjustments */
+    .stat-card {
+        margin-bottom: 20px;
+    }
+    
+    .why-choose-image-container {
+        margin-top: 40px;
+    }
+    
+    .why-choose-image-container img {
+        height: 350px;
+    }
+    
+    .founder-img-wrapper {
+        margin-top: 40px;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .founder-img-wrapper img {
+        max-width: 450px;
+        height: auto;
+    }
+    
+    /* License Badge container */
+    .license-seal-container {
+        margin-top: 35px;
+    }
+    
+    /* Footer columns alignment */
+    .footer-widget {
+        margin-bottom: 35px;
+    }
+    
+    .footer-bottom-links {
+        justify-content: center;
+        margin-top: 15px;
+    }
+    
+    .footer-bottom {
+        text-align: center;
+    }
+}
+
+/* 3. MOBILE LANDSCAPE & PHONES (Max 768px) */
+@media (max-width: 768px) {
+    html {
+        font-size: 14px;
+    }
+    
+    .section-padding {
+        padding: 60px 0;
+    }
+    
+    .section-title h2 {
+        font-size: 1.85rem;
+    }
+    
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+    
+    .hero-content p {
+        font-size: 1.1rem;
+        margin-bottom: 25px;
+    }
+    
+    /* Gallery Overlay visibility */
+    .gallery-overlay {
+        opacity: 1;
+        background-image: linear-gradient(rgba(0,0,0,0.1), rgba(13, 40, 74, 0.9));
+    }
+    
+    /* Careers Form padding */
+    .careers-form-card {
+        padding: 25px 20px;
+    }
+    
+    /* Map Container */
+    .map-container {
+        height: 300px;
+        margin-top: 30px;
+    }
+    
+    /* Lightbox nav position */
+    .lightbox-prev {
+        left: -40px;
+    }
+    
+    .lightbox-next {
+        right: -40px;
+    }
+    
+    .lightbox-nav {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+}
+
+/* 4. SMALL MOBILE PORTRAIT (Max 576px) */
+@media (max-width: 576px) {
+    .top-bar {
+        display: none; /* Hide top bar on very small devices to save viewport space */
+    }
+    
+    .hero-banner {
+        min-height: calc(100vh - var(--header-height));
+        padding: 60px 0;
+    }
+    
+    .hero-content h1 {
+        font-size: 1.85rem;
+        line-height: 1.4;
+    }
+    
+    .hero-content p {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        width: 100%;
+        gap: 12px;
+    }
+    
+    .hero-buttons .btn-sisms {
+        width: 100%;
+    }
+    
+    .why-choose-badge {
+        position: relative;
+        bottom: 0;
+        left: 0;
+        padding: 15px 20px;
+        border-radius: 0 0 var(--border-radius-md) var(--border-radius-md);
+        text-align: center;
+    }
+    
+    .why-choose-image-container img {
+        height: 250px;
+        border-radius: var(--border-radius-md) var(--border-radius-md) 0 0;
+    }
+    
+    .founder-img-wrapper img {
+        height: 320px;
+    }
+    
+    .contact-info-card {
+        padding: 20px 15px;
+        gap: 12px;
+    }
+    
+    /* Floating mobile action button adjustment */
+    .floating-action-btn {
+        width: 50px;
+        height: 50px;
+        font-size: 1.5rem;
+        bottom: 20px;
+    }
+    
+    .floating-call {
+        left: 20px;
+    }
+    
+    .floating-whatsapp {
+        right: 20px;
+    }
+}
