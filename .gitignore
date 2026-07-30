@@ -1,0 +1,6 @@
+﻿# Ignore Analytics & Presentation files
+admin/
+analytics.html
+assets/js/analytics.js
+create_presentation.py
+*.pptx
